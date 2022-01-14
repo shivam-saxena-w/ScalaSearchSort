@@ -7,9 +7,7 @@ class Sorting {
 
 
   def insertionSort(array: Array[Int]): Array[Int] = {
-//    5 4 3 2 1
-    val myList: List[Int] = array.toList
-//    same
+    val myList: List[Int] = array.toLis
     def helperInsertionSort(myList: List[Int]): List[Int] =
       if (myList.isEmpty) {Nil}
       else {insert(myList.head, helperInsertionSort(myList.tail))}
@@ -62,4 +60,5 @@ class Sorting {
     innerBubble(array.toList).toArray
   }
 
+  println(Array())
 }
